@@ -4,6 +4,8 @@ on:
      types: [published]
    workflow_dispatch:
 
+  schedule:
+    - cron: "0 0 * * *"
 jobs:
   build:
     name: Build and publish release to PyPI
